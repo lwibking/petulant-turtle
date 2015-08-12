@@ -1,0 +1,133 @@
+---
+layout: page
+//title: Wes Anderson Movie Generator
+permalink: /wesAnderson/
+---
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <style type="text/css">
+			h1 {
+    			text-align:center;
+    			color:#6CBFE8;
+    			font-size:32pt;
+    			font-style:italic;
+    			font-style:bold;
+    			font-family:'Futura', Arial;
+			}
+
+			body {
+    			//background-color:#8A0000;
+      			background-color:white;
+			}
+
+			table {
+				background-image: url('https://googledrive.com/host/0B-r7pt8HM_YMUkl3QXNQclIyNTA/WesAnderson-01_revised.jpg');
+				width:100%;
+    			text-align:center;
+   				margin-left:auto;
+   				margin-right:auto;
+			}
+
+			p {
+   				font-family:'Futura', Arial;
+    			font-size:20px;
+    			//color:#8A0000;
+    			color:#6CBFE8;
+    			font-style:bold;
+			}
+
+			textarea {
+    			border : 0;
+    			padding: 5px;
+    			outline: none;
+    			background-color: none;
+    			width:75%;
+    			height:70px;
+    			webkit-border-radius: 5px;
+    			moz-border-radius: 5px;
+    			border-radius: 5px;
+    			font-family:'Futura', Arial;
+    			font-size: 14px;
+    			resize:vertical;
+			}
+
+			button {
+   		 		font-family: 'Futura', Arial;
+    			font-size: 16px;
+    			/*color: #6CBFE8;*/
+    			border-radius:8px;
+    			/*background-color: #CD5435*/ 
+			}
+		</style>
+		<script src="http://localhost:4000/assets/js/jquery-1.5.1.min.js"></script>
+        <script type="text/javascript" src="http://localhost:4000/assets/js/wesAndersonMovieMaker.js"></script>
+	</head>
+
+<body>
+<table>
+<tr>
+<td><h1 style="background-color:#CD5435">Let&apos;s Make a Wes Anderson Movie!</h1></td>
+</tr>
+
+<tr>
+<td style="background-color:#CD5435">
+<p>We can cobble together a Wes Anderson movie without having to put much thought into it. Just click the buttons below to generate your characters, motif, and other movie elements. Now all you have to do is determine whether you prefer being called an <em>auteur</em> or a <em>wunderkind</em>.</p>
+</td>
+</tr>
+<tr>
+<td><br/></td>
+</tr>
+<tr>
+<td>
+<textarea id="txtbox" readonly></textarea>
+<br>
+<button id="buttonID" onClick="protagonist()">Protagonist</button>
+<br>
+<br>
+</td>
+</tr>
+
+<tr>
+<td>
+<textarea id="txtbox2" readonly></textarea>
+<br>
+<button id="buttonID2" onClick="setting()">Setting</button>
+<br>
+<br>
+</td>
+</tr>
+
+<tr>
+<td>
+<textarea id="txtbox3" readonly></textarea>
+<br>
+<button id="buttonID3" onClick="nemesis()">Nemesis</button>
+<br>
+<br>
+</td>
+</tr>
+
+<tr>
+<td>
+<textarea id="txtbox5" readonly></textarea>
+<br>
+<button id="buttonID5" onClick="majorMotif()">Major Motif</button>
+<br>
+<br>
+</td>
+</tr>
+
+<tr>
+<td>
+<textarea id="txtbox4" readonly></textarea>
+<br>
+<button id="buttonID4" onClick="soundtrack()">Soundtrack</button>
+<br>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>
