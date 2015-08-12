@@ -1,0 +1,12 @@
+# Site settings
+title: Weekly Stories
+#email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  This is my site.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://localhost:4000" # the base hostname & protocol for your site
+twitter_username: lwibking
+github_username:  lwibking
+
+# Build settings
+markdown: kramdown
