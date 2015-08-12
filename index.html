@@ -1,0 +1,68 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<!--SO MUCH THANKS TO http://leemark.github.io-->
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>A simple DIY responsive slideshow made with HTML5, CSS3, and JavaScript</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Arizonia" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="css/slideshow.css"/>
+        
+</head>
+
+    <body>
+    <!--Testing responsive headline <h1>The curious incident of the dog in the night</h1>-->
+
+
+    
+	<div class="bss-slides num1" tabindex="1" autofocus="autofocus">
+		<figure>
+			<img src="assets/images/starrySky_resized.jpg" /><figcaption class="figcaptionWelcome"></figcaption> 
+			<figcaption class="figcaptionText"</figcaption>
+        </figure>
+        
+        <figure>
+			<img src="assets/images/creamCityCookeville_resized.jpg"/><figcaption>Text here</figcaption>
+			<!--<figcaption class="figcaptionText">Prepare to be charmed by our matchless mountains, rich historical heritage, unique downtown shops, and outdoor opportunities at our many local parks!</figcaption>-->
+        </figure>
+        
+        <figure>
+			<img src="assets/images/echoLakeLouisa_resized.jpg"/><figcaption>Text here</figcaption> 
+			<!--<figcaption class="figcaptionText">Nestled within 200 wooded acres on the shores of enchanting Echo Lake, Camp Yokna-wa-nee offers a lifetime of fun in a world of neverending summer!</figcaption>-->
+        </figure>
+
+		<figure>
+			<img src="assets/images/nazarethAKAsanFrancisco_resized.jpg"/><figcaption>Text here</figcaption> 
+			<!--<figcaption class="figcaptionText">Bright lights, big city! Downtown Nazareth is abuzz with exciting live music, art &amp; cultural events, cosmopolitan cuisine, and elegant hotels.</figcaption>-->
+        </figure>
+	</div>
+
+<script src="assets/js/jquery.slabtext.js"></script>
+<script src="assets/js/slideshow.js"></script>
+<script>
+var opts = {
+    auto : {
+        speed : 10000, 
+        pauseOnHover : true
+    },
+    fullScreen : false, 
+    swipe : true
+};
+makeBSS('.num1', opts);
+
+var opts2 = {
+    auto : false,
+    fullScreen : true,
+    swipe : true
+};
+makeBSS('.num2', opts2);
+</script>
+</body>
+</html>
